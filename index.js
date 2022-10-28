@@ -35,7 +35,7 @@ const managerQuestions = [
 
 function addManager() {
   inquirer.prompt(managerQuestions).then((responses) => {
-    const { name, id, email, officeNumber } = responses;
+    const {name, id, email, officeNumber} = responses;
     const manager = new Manager(name, id, email, officeNumber);
     employees.push(manager);
     console.log(manager);
